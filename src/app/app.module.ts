@@ -9,6 +9,8 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceEmpleados } from './services/service.empleados';
 import { MenusintokenComponent } from './components/menusintoken/menusintoken.component';
+import { CrearAlumnoComponent } from './components/crear-alumno/crear-alumno.component';
+import { UpdateAlumnoComponent } from './components/update-alumno/update-alumno.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MenusintokenComponent } from './components/menusintoken/menusintoken.co
     HomeComponent,
     MenuComponent,
     LoginComponent,
-    MenusintokenComponent
+    MenusintokenComponent,
+    CrearAlumnoComponent,
+    UpdateAlumnoComponent
   ],
   imports: [
     BrowserModule,

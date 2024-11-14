@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Update Alumno</h1>
+    <div class="form-group">
+        <form #updatealumnoForm="ngForm">
+            <input value="{{Alumno.idAlumno}}" #cajaidalumno name="cajaidalumno" type="text" placeholder="IdAlumno (se asigna automaticamente)" class="form-control" disabled>
+            <input  value="{{Alumno.nombre}}" #cajanombre name="cajanombre" type="text" placeholder="Nombre" class="form-control">
+            <input   value="{{Alumno.apellidos}}" #cajaapellidos name="cajaapellidos" type="text" placeholder="Apellidos" class="form-control">
+            <input  value="{{Alumno.imagen}}" #cajaimagen name="cajaimagen" type="text" placeholder="Imagen" class="form-control">
+            <input value="{{Alumno.activo}}" #cajaactivo name="cajaactivo" type="text" placeholder="Activo" class="form-control">
+            <input value="{{Alumno.idCurso}}" #cajaidCurso name="cajaidCurso" type="text" placeholder="IdCurso" class="form-control">
+            <button (click)="updateAlumno()" class="btn btn-primary">Update</button>
+        </form>
+</div>
